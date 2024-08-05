@@ -3,8 +3,8 @@
 
 enum BanExplosionMode {
     None,        // 无视
-    NoExplosion, // 禁止爆炸
     NoBlock,     // 禁止破坏方块
+    NoExplosion, // 禁止爆炸
 };
 
 namespace BanExplosion {

@@ -1,35 +1,26 @@
-# LeviLamina Mod Template
+# BanExplosion - 自定义防爆
 
-A LeviLamina mod template
+## 简介
 
-This mod is a template for developing LeviLamina mods.
+BanExplosion 是一个 Minecraft LeviLamina服务端插件，用于修改爆炸
 
-## Install
-
-Generate a new repository from this template.
-
-## Usage
-
-Before using this mod template, make sure that you have installed XMake and a Minecraft Bedrock Server with LeviLamina.
-
-1. Clone the new repository into a local folder.
-
-1. Change the mod name and the expected LeviLamina version in `xmake.lua`.
-
-1. Add your code.
-
-1. Run `xmake repo -u` in the root of the repository.
-
-1. Run `xmake` to build the mod.
-
-Now the build is complete at `bin/`.
-
-## Contributing
-
-Ask questions by creating an issue.
-
-PRs accepted.
-
-## License
-
-CC0-1.0 © LiteLDev
+## 配置文件
+```jsonc
+{
+    "version": 1, // 配置文件版本(勿动)
+    "setting": { // 防爆配置,可填实体霍方块的命名空间ID
+        // (None:无视 NoBlock:禁止破坏方块 NoExplosion:禁止爆炸)
+        "minecraft:tnt": "NoBlock", // TNT
+        "minecraft:respawn_anchor": "NoExplosion", // 重生锚
+        "minecraft:tnt_minecart": "NoBlock", // TNT矿车
+        "minecraft:creeper": "NoBlock", // 苦力怕
+        "minecraft:end_crystal": "NoBlock", // 末地水晶
+        "minecraft:dragon_fireball": "NoBlock", // 龙火球
+        "minecraft:wither_skull": "NoBlock", // 凋灵之首
+        "minecraft:fireball": "NoBlock", // 恶魂火球
+        "minecraft:bed": "NoBlock",  // 床
+        "minecraft:wither": "NoExplosion", // 凋灵
+        "minecraft:wither_skull_dangerous": "NoBlock" // 蓝色的凋灵之首
+    }
+}
+```
