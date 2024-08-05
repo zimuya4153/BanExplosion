@@ -1,6 +1,8 @@
 {
     "name": "${modName}",
     "entry": "${modFile}",
-    "version": "${modVersion}",
-    "type": "native"
+    "version": "1.0.0",
+    "type": "native",
+    "description":"自定义防爆",
+    "author":"小小的子沐呀 QQ:1756150362"
 }
